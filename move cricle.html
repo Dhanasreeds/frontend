@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Circle in Square</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background-color: #ccc;
+    }
+    .circle {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: #007bff;
+      border-radius: 50%;
+      animation: moveCircle 5s infinite;
+    }
+    @keyframes moveCircle {
+      0% {
+        top: 0;
+        left: 0;
+      }
+      25% {
+        top: 0;
+        left: 250px;
+      }
+      50% {
+        top: 250px;
+        left: 250px;
+      }
+      75% {
+        top: 250px;
+        left: 0;
+      }
+      100% {
+        top: 0;
+        left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="circle"></div>
+  </div>
+</body>
+</html>
